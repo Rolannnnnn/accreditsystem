@@ -1,0 +1,252 @@
+[
+    {
+        "image": "tor_synth_10_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information \"Ki mberly Last name Silva Preferred \"Ti moth Patient identifier 1 851 Date of birth M 9 Blood type Last updated date Male a O- July 02 2017 Adcress 8677 Smith Spurs Apt. 544, Mosston, Cy: Stale Negros _| Zip code, RI 34426 Kiddpont a Occidental 3688 First nai Gender Emergency contact Full name ganifer Relationship Sibling Contact ™™A9364 957909 Full name Relationship Veronica Carter Parent |“\"\"\"§9000945072 Insurance information Insurance carrier HealthFirs' Insurance plan i Insurance Foup Sea \"89073963069 9028 1 96 Group number 5 Social “\"4FB5 5822 524 Health information Policy number Physician information Name Designation speciality Phone Address Notes Roatinses Gastroenterologj9752025234 a ‘Sule io odri nburgh, HES? Pathologist 99871020614 OMT nee Michelle, MT 01127 Known medical conditions Controlled Type II Diabetes Mellitus Allergies Insect Stings"
+    },
+    {
+        "image": "tor_synth_10_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Sree contact Fullname nni fer a __Nenee __ Parent | insurance information 9028 196 a nfiammation Notes “Ashley ley Gastroenter olog 9752025234 L Rodriguez | Nancy Patholog ist 9 Massey g stoae7t029 ark ij ‘Controlled Type n Di abetes Mell tus |"
+    },
+    {
+        "image": "tor_synth_10_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First nat Ki m berly Last name Silva Preferred a i mothy*” identifier 851 Gend Date of birth Blood type Last updated date a Male Marsh 79 O- July 02 2017 Address 8677 Smith Spurs Apt. 544, Mosston, & State Neg ros Zip code, RI 24426 ‘Kiddport Occid ental 3688 Emergency contact Full name Jennifer Relationship S i bl i ng Contact \"09364 957909 Full name Relationship Veronica Carter Parent en 9000945072 Insurance information Insurance carrier instealthF} up Insurance plan Bao ral Contact \"907396306 men 9028196 |\" 5 se FAB5 5822 524 Health information Physician information Name Designation speciality Phone Address Notes Ashley Gast nterolo 9348 Trevor r Hills Radihes astroe 9752026234 vonbugh I Nancy Pathologist 9871029618 °% pee Massey Michelle, MT 01127 Known medical conditions Controlled Type || Diabetes Mellitus Allergies Insect Stings"
+    },
+    {
+        "image": "tor_synth_10_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "lent} Health WA 544, Mi fosston, Spurs A RI 24426 Jennifer Norton Veronica Carter nie information i Physician information ‘a ne Le Gere —— Paslgnationspee Ashley Gattroenterolog Rodriguez: Nancy _ Massey H 1 i i | eee om eee se ae pense, rte Diabetes Mell tus Insect ct Stings"
+    },
+    {
+        "image": "tor_synth_10_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient nt information ee Firstn nai “Kimberly Last nan name ——____| ‘| Preterred nape Patient i identitier LK Silva. |\" Timothy 1851 Gender Date of birth M re p29 Blood ty type Last updated date Male TG July 02 2017 Address 8677 Smith n SP si Rl 2atge 544, *; Mosston, TKidapon™ tat os a 3688 Emergency ec contact oNonifer Relationship ee Sibling one Full name Relationship Veronica Carter _ ar e I Contact num Insurance information I It “09000945072 romana Carrier Heal Ith irst Insurance Plan Es _Insurance >rOup = gent lal Care \"ac ‘age Policy number i: \"09073065066 “9028196 [Saree 8 gags “5822 524 L Physician information a Name Pesignation specialty Phone Address Notes — ——>— 2 ee A hle 934g Teva Hills RG sine Ga Toenterologer 972025204 va uy __ ———|— a —}— ‘Nance Patholoc ist, ove Tracy Mission | Massey g 9871 02 961 Micka MT ORE [> —— —— - | | \"27 | | | L | a | Known n medical na’ Conditions Controted Type l Diabetes| Mellitus. “Insect ‘Stings ]"
+    },
+    {
+        "image": "tor_synth_1_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Ss teven| Last name Wrigh t eet ian Patient identitier 8733 Gender Female |= Marah. 03 Bose At Letina = USNS Smith, FPO AA 94968 Kristinmoutialawan 7746 Emergency contact mr? Connie Obrien F tonshio Parent °\"* “0952905972 “uname Katelyn Dennis _ Felstonshi Friend Insurance information Contact “\"3904 733 9 6 73 Basig Health Contact \"9925 1 44 1 1 1 4226 778 Group number 7 Social \"3504 48 72 7 0 Health information Physician information Insurance Carrier PhilZare Health Insurance plan ystems Policy number Name Designation speciality Phone Address Notes gihew pGepprat 09081182444 1a ai ee Garrie Pediatriciangg 797507399 65 es 0481 APO Gans 453 Known medical Conditions Chronic Fatigue Syndrome Allergies Penicillin |"
+    },
+    {
+        "image": "tor_synth_1_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred name Patient identifier Steven Wright Brian 8733 Gend Date of birth Blood type Last updated date Female Marsbs09 A+ April 11 2008 Address USNS Smith, FPO AA 94968 KristinmoutiPalawan”” \"7746 Emergency contact Full name Contact numb Connie Obrien ns\"? Full name Parent 09529059726 Katelyn Dennis Relationship Friend Contact \"09047339673 Insurance information Insurance carrier PhilGare Health Insurance plan Basig Health Contact “\"§925 1 441 1 1 8 4226778 Group number 7 Social ““=\"™3504 4872 70( Health information Policy number Physician information Name Designation speciality Phone Address Notes anew piaelicRer 09081182441 \"Rie seder a Garrie Pediatriciangg797527335 §% OS, BLP AbO AR 46453 Known medical conditions Chronic Fatigue Syndrome Allergies Penicillin"
+    },
+    {
+        "image": "tor_synth_1_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "pemona= Health Record i Patient information First name Steven. an Wright | \"atlan “Patient Ridentifier 8733 | Date of bith March 03 lnseedtrel \"Female SRS\" At eS eee _“* USNS Smith, FPO AA 94968 Kisinmottaewn: ee Preferred name Last pate date 7 Ge ro Relationship Frie nd : i oma “09047339673 Ful name sen Katelyn Dennis } Insurance 2 information [rence care Pricer Health i= eer Basle ‘Health T Contact ~rjg251441118 [Pascymonbor Ee \"Group number 7 Sociat \"3904 487 2- 7007 r as | Health th information crabs SEMA Re CEs aes Soest | eae inormation eee (SS Notes Name) Desontonereey L Phone co pRB 908118244 \"eae Carrie \"Peslatriciang797527339 aR — ——T~ - } 7 \\ | | i | 1 1 | i | | | | I | | rn mo 5 en eS ' Known Lee Sparse Chronic Fatigue Syndrome Aitergies po Penicillin"
+    },
+    {
+        "image": "tor_synth_1_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Recard Patient intormavion Female a USNS: Smit th, FPO, AA 94968 K SH Emergency c eoniact C Maui tthe ew Carrie. Sie OAR"
+    },
+    {
+        "image": "tor_synth_1_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred name Patient identifier Steven Wright Brian 8733 Gender Fema le Date of birth March 03 Blood type A+ Last ayers *“““ USNS Smith, FPO AA 94968 ristinmoutiPalawan” \"7746 Emergency contact Full name Connie Obrien Relationship Pa rent Contact “09529059726 Friend “\"\"\"§9047339673 Full name 7 Relati hi Katelyn Dennis \"rs\"? Insurance information Insurance carrier Philare, Health Insurance plan Basig Health Contact \"09251441 1 1 8 men\" 4226778 nmr a \"3304 487 2 700 Health information Physician information Name Designation speciality Phone Address Notes —T tthew pene, 09081182441 \"Alexandenonne eyer DE 19155 arrie Pediatrician PSC 5604, Box oane 09797527335 9481, APO AA A J Known medical conditions Chronic Fatigue Syndrome Allergies Penicillin"
+    },
+    {
+        "image": "tor_synth_2_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record 4 Pate pesceeare Pe Bae ee eS ae ee e Pro SS ee ree “\"Andre\\ ew, a ™ Reyes \"\"Welissa eee 9072. fll Male °*°\"\" Jygigt Sm ee ~~ 7 =< Moorebers, i \"wll iland “Bulaca n 3 305, Emergency contact if Fuil name Jessica euy ip Parent | ‘Contaet toss Full name pec Lara a) i netaneste H Policy number or SS etpotn* a insur ance plen Compreh Emeneeeee ensive Contact num Gare Plan 061605506 6347782 |r 9 emer. 8986 904 pon icachnnden one ie Mao Physician information CG ee Ceres oe Name — Phone “Address News _batigtsen Gynecoooe 1628203 ks ard Card rloisige 00954554 agg ey _ Saree 89969 | ! { ie eae enn re nena weveecen rene eheveeeennenn | Known medical conditions ‘Mild F Respiratory Infection Sulfa C Drugs ©"
+    },
+    {
+        "image": "tor_synth_2_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name An d rew Reyes M el i ssa identifier 9072 Last name Preferred ni Gender Date of birth June 14 Blood type Last updated date Male Bois B+ December 19 2023 Address 156 Evans Mountain, Mooreberg, City North St Zip code, GU 42580 9 Whitneyland ‘Bulacan 3305 Emergency contact Full name Jessica Curry Relationship Parent Contact ™™)9337559838 Full name q Relationship Timothy Salinas Friend 9 \"692633992111 Insurance information Insurance carrier Maxcae ie plticata Insurance plan Comprehensive Contact mney Care Plan 9461625536 Policy number 6347782 Group number 9 Social secur “FFA 8986 9045 Health information Physician information Name Designation speciality Phone Address Notes Ju Gstetjician- -Gynec09081628203 “Rec oust ISS: avila 13299 363 Morales Ferry, ward (Cardiologistgg 100954558 ‘Welcrhayen, G arza Sess Known medical conditions Mild Respiratory Infection Allergies Sulfa Drugs"
+    },
+    {
+        "image": "tor_synth_2_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Jessica Gur ry Pa arent 0933 37559838 Timoiny Salinas Friend 99263399211 Name Phone insurance informations Care 19461625536 i) AFH 4 8986 904E “jue sstetr ician G meceous t 1628203 Bavila _ Edward Cardiologist 'o 1009545 568 Sulfa Drugs"
+    },
+    {
+        "image": "tor_synth_2_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record yao 1628606 “4TI4 8 8986- ope 1 But name \" Fimothy Salinas Noles Name 7 Designation sse Prone Qiyptettician- -ynecg908 6 528202 3 Be vila. k ward ‘Cardio ologi isin 10095455 area won medical conditions “Mild 4 Respi iratory Infecti ion Atergies ‘Sulfa Drugs"
+    },
+    {
+        "image": "tor_synth_2_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Parent ae 09337559 9838 Friend “\" \"09263 0821 Compret “euigctioan Gynecsoot6 628203 He 68 Eqward Cardiolog tog 100954568 atZe ‘Infecti ion fo “SE bnice:"
+    },
+    {
+        "image": "tor_synth_3_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Christi ia Car penier ° 097 7364 4¢ 6855 Guardian 256 74303 1 =xecutive © _ Bgeave a Sara “Dermatciogist9750495474 Brown Jermai ne Neurologi vistooa rasa: sA1d Acevedo _ Lo mee a :"
+    },
+    {
+        "image": "tor_synth_3_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record _ Patient information T First name Last name | Preferred Patient identifier Peter Davies |“ Shannon 7912 1 Gender Date of birth Octo! er 31 Blood type Last updated date Male 185 5 A- November 14 2015 Address 93338 Alexandra Expressway, East ity Stafe ny; is ZiP code Brooke Misco!” Gonzalesfurt Misamis 8755, Emergency contact wae J Full name Christina Relationship . Contact numb. Carpenter Sibling “09736416855 Full name Anthony Powers Relationship Contact ni num wre ony Powers |\" Guardian “09256743031 Insurance carrier __ Intellicare |r\" Basi |tesssasran Policy nu number 8437775 Group number 9 Social ™4427 5054 236. Physician information Name Designation speciality Phone Address Sara Dermatologiso9750495471 ABI tise, Brown Natasha, VI 52648 Notes Jermaine Neurologist 108 Neloen Stavenue Acevedo. 9941444341 Iie eremiah, FL 75111 Known medical conditions Hypertensive Episode Allergies Shellfish"
+    },
+    {
+        "image": "tor_synth_3_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Gender Patient identifier Male 7912 Date of birth Octeber 31 Blood type Last updated date A- November 14 2015 Address 93338 Alexandra Ex Tessway, East 82 Staten 4; is ZiP code, Brooke, MI beaey=) onzalesfurt Misamis 8755 Emergency contact Full name hristing Relationship : Contact numb, carpets Sibling 0973641685 Full name Anthony Powers Relationship Guardian Insurance information Insurance Carrier In tellica re Insurance plan 843 7 775 Group number Health information Policy number GSPHNE [come \"0942546780 9 Social security 7437. 5 0. 5. 4 2 6. Physician information Name Designation speciality Address stele se, Natasha, VI 52648 Sara Brown \"RU Segue Jeremiah, FL75114 Known medical Conditions Hypertensive Episode Shellfish"
+    },
+    {
+        "image": "tor_synth_3_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Last name referres atient identifier Davies |\" Shannon” 7912 Date of birth Oct BS. 31 Blood type Last updated date ts 55 A- November 14 2015 Zip c OT 5 5 Patient information Peter Gender Male Address 93338 Alexandra Expressway, East ity Stale jj i Brooke, Ml 86601 Snzalesfurt Misantat First name Emergency contact Full name gh ristina Relationship S i bl i n g arpenter Full name Anthony Powers Relationship Guardian Contact \"97364 1 6855 c e 995674303 1 Insurance information Insurance carrier ntel i ca re Policy number 8437 77 5 Health information Insurance plan Executive Contact \"9425467 822 Group number 9 Social <1 F997 5054 2364 Physician information Name Designation speciality Phone Address Notes Sara Dermatologis0975049547 1 ARRAS URe Brown Natasha, V1 52648 Jermaine Newolodistogaraadset4 “ovat Known medical conditions Hypertensive Episode Allergies Shellfish"
+    },
+    {
+        "image": "tor_synth_3_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred d Patient identifier Peter Davies Shannon 7912 Date of birth Blood type Last updated date Male Octehss 31 A- November 14 2015 Address 93338 Alexandra Expressway, East ity Stale isgmis ZiP 0% Brooke, Ml 86601 Génzalestutt Misamis 8755 Emergency contact Full name christina Relationship S j bl n g Contact numba 7364 4 6855 Gender Full name Relationship Guardian Contec \"9256743031 Anthony Powers Insurance information Insurance carrier ntel lica re Insurance plan xeeiutive Contact \"39425467822 Policy number 8437775 Group number 9 Social secu \"97 5054 2362 Health information Physician information Name Designation speciality Phone Address Notes Sara Dermatologis975049547 1 N sticels, [Se Brown atasha, VI52648 Je i Neurologist 188 Nielsen Stravenue Jermaine aistqo414443414 \"Ween Known medical conditions Hypertensive Episode Allergies Shellfish"
+    },
+    {
+        "image": "tor_synth_4_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information Dy TE TEER ER Taare Pee eee ee aes Sess First nar j Last nam Preferred nam “Rebecca \"Martinez __Kara \"247 fr “Gender Ti Date of bith March 06 Biood type Last updated date Male_ Bon I B+ i Apri 03 1997, Address 518 Shawn Viltag Suite 580, City State Zp code Millerview, eed \"eli, Fgh} Q Noite { _ 19 1 2) aa ns a i 4 co ~~ 7 See Eunnee eeannnaies EN pene | Fullname j Relationship Contact numb ae Tyrone Meneit ___ Spouse ‘09907125979 i Full name Stacey Franklin ‘atone {_ a\" Guardian \"99849405501 eurance infomation insurance carrier edicard mewanemer Family comanme. 2 _PRoeaES Newer Protection Plan 09549793287 f ‘Olicy Nur! FOUR Nur an 50 16! Securit =\" 6254806 g 5985 7 169. 318 | Mest iormation awn _ Paychiatris 99498641837 1631 Kotyeon ; Lisavitie, NM 73003 i +~- a —t. pret, Surgeon joan ae Hendricks 99242230657 esas “7 _. —— 7 ne a 7 a —— -——-- je a ir inoue medical Sane ‘Seasonal Allergic Rhinitis Allergies Peanuts”"
+    },
+    {
+        "image": "tor_synth_4_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information Rebecca’ Martinez _ Kara \"24 71 i Gender Male Date of pyth Magh te C6 Sloud type B+ Last updat Address 578 Shawn Villages 5 Su ite 580, “Fey oth Stic {locos 2p cod A \"colon _ Norte Em gency. contact ”° Tyrone Meneil Relationsnip Spouse te \"99907 4: 25979 Stacey Franklin Relatonshp j Contact —Bee49405601 Guardian Insurance information insurance Carrier ard Family T Gonta eMeclcars ores Plan 09849798237 Policy number 6254806 en 8 \"5285 7169 318! Insurance pian Name Oesignation speciat ity i Phone Address Notes ReRwr Psychiatrist oo40664 1897, 3 Hees Surgeon 09242230557 Known n medicat conditions Seasonal Allergic Rhinitis Allergies Peanuts"
+    },
+    {
+        "image": "tor_synth_4_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First nai Last nam Preferred name \"Rebecca Martinez Kara Last updated date Gender Date of birth 0 Blood type Male Maysh 6 Bt April 03 1997 City North State \\lp cos orte Address 518 Shawn Villages Suite 580, Zip cod Milerview, PA 32731 Kevinburgh 7912 Patient identifier 2471 Emergency contact Fullname Tyrone Mcneil Relationship Spouse Contact \"99071 25979 Contact ™™¥984940550 1 Relationship Fulame Stacey Franklin Guardian Insurance information Insurance carrier AG dicard Insurance plan Family Contact mney il 9549793237 ppines Protection Plan Group number 8 Social secur ASD -7 1 69 31 gc Policy number 6254 806 Health information Physician information Name Designation speciality Phone Address Notes Shawn __ Psychiatrist 99498641837, ‘eameriNes Nelson Lisaville, NM 73003 ete. |, Suaeen_ 99242280567 “ase Known medical conditions Seasonal Allergic Rhinitis Allergies Peanuts"
+    },
+    {
+        "image": "tor_synth_4_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First “Rebecca Last “Martinez Preferred name Ka ra Patient identifier 2471 Gender Date of birth [arch_06 Blood type Last updated date Male B62 Bt April 03 1997 Address 518 Shawn Villages Suite 580, City North State Zip cod Millerview, PA 32731 kevinburgh pcos ‘79 12 Emergency contact Full name Tyrone Mcneil Relationship Spouse Contact \"99071 25979 Full name Relationship Stacey Franklin Guardian ~ 69849405501 Insurance information Insurance carrier dicard Insurance plan Famil Contact number PMipSics Protection Plan 069549793237 “em 6254806 \"8 met \"5985 7 169 31 8: Health information Physician information Name Designation speciality Phone Address Notes Shawn __ [Psychiatrist 09498641837 ‘Ganer Wes Ne son isaville, NM 73003 Brett, Surgeon gg242230557 ““seiesius Hendricks Andrew, Vt 53240 Known medical conditions seasonal Allergic Rhinitis Allergies Peanuts"
+    },
+    {
+        "image": "tor_synth_4_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information Patient identifier ‘Re be cca Last my) a rti n ez Preferred name Ka ra 24 7 1 First nai Gender Date of birth Mari 06 Blood type Last updated date Male ag Bt April 03 1997 Address 518 Shawn Villages Suite 580, City North __, State Zip cod Millerview, PA 32731 kevinburgh pcos ‘79 12 Emergency contact Full name Tyrone Mcneil Relationship S pouse Contact \"99071 25979 Full name Relationship Stacey Franklin Guardian °\"”\"\"\"098494055011 Insurance information Insurance carrier dicard Insurance plan Famil Contact number PMipsics Protection Plan 09549793237 Policy number 6254806 Group number 8 Social Scour EASE _7 4 69 3 1 Fey Health information Physician information Name Designation speciality Phone Address Notes Shawn _ Psychiatrist 099498641837 ‘3hkWes N eison Lisaville, NM 73003 Brett, Surgeon g9242930557 ™Adletaius Hendricks Andrew, Vit 53240 Known medical conditions seasonal Allergic Rhinitis Allergies Peanuts"
+    },
+    {
+        "image": "tor_synth_5_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record es inform: Brooke Rodriguez information ortuneCare Insurance 7777806 MW ichelleOpt ithalme _sievens Gastro intesti nal Di isturbance"
+    },
+    {
+        "image": "tor_synth_5_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred name Patient identifier Sharon Moss Eri 9739 Gender Date of birth April 10 Blood type Last updated date Female 1999 AB+ March 12 2003 Address Cit t Zip code, 594 Nancy Hollow, North Jameshaven, DarrellmoutfLagu na ip 1072 Emergency contact Full name Robert Jones Relationship Sibling Contact \"9831431473 min\" Brooke Rodriguez |\"“\"\" Sibling \"90526738711 Insurance information Insurance carrier FortuneCare Insurance plan Outpatient Contact number insurance Coverage Plan 69780776790 Policy number 7777 806 Group number 4 2 Social Seoul WI7 G 937 3 76 8! Health information Physician information Name Designation speciality Phone Address Notes Sal, “Sugen’ 09515287468 Towa Oe ichelleOphthalmologi g364307681 SYR sate tevens Known medical conditions Gastrointestinal Disturbance Allergies Latex"
+    },
+    {
+        "image": "tor_synth_5_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record i patient information Bin erred name 7 Sui, i 69 9780776790 “7246 937 3- 7688 Outpatient Cover age Pi an i i ‘Michelle opnthaim mol oaboss076e4 Gastro intesti inal Di sturbance |"
+    },
+    {
+        "image": "tor_synth_5_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Recard _T1TT808_ i Heaith information UCAS M lichell eOphthal volpaoan7 af otevens bn hence nnn a a eT re"
+    },
+    {
+        "image": "tor_synth_5_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record ‘atient information RO bert J Jones Brooke Rodriguez Sibling 69 052673 3871 Toreor76790 7246 93 37 3- 7685 Vjcheteost lolougeae 007684 Gastroi intestinal Di isturbance |"
+    },
+    {
+        "image": "tor_synth_6_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patent information —\"Melissa| “Ha tfield Perse dwards mr Male *%** Oxppe, 20 Soi AB- if aon 1820s PSC 7059, Box 580, APO AP OFinsonburgh siige0 8378] Emergency contact 2891 Last updateg date Address Full name T lelationship ntact num| craig |* Sibling |* ‘090719328q Full name T Relationship Carl Moore Guardian |= \"09257402688 Insurance information Insurance car rier Ingular Health ee plan enior C: Contact num) tions Adee CHE,, oye Policy number al 9666420859 6979251 perros \"364 269 1 96 ays Health ii L Physician information Designation speciality Phone Address Notes J ere my Otolai Ngol (ENT Special! ay 993408679 30 rican Key, awrence “indy, K Jeffrey Shaw Name +> so at Known medical Conditions Acute Lower Back Pain Pollen Oe,"
+    },
+    {
+        "image": "tor_synth_6_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "j Name -s____. Personal Health Record le Patient norman First name, ts Gendor je birth Blood Male |\" Ockgpgy 22 je __ _ Address PSC 7059, 89, Box 7380, APO AP “Melissa,” “Hatfield \"Edward\" oe 2891 ai Last updated dato AB- ri 15 200 PSC ga A Jélinsonburh Spee, \"8376 ed tae Retationship Sibling en ne Relationship Carl |Moore I [=\"\"bo0r7seazed fo \"09257402688 j Insurance inforinwtion r f—-—. ee eee TT ewea} insurance carrier ingular. Health testers Ce pian advantage Han | Contact \"09666420850 4. jroo 6979251 I Health information Physician information Jeremy Otolaryngoiogist h~ fe Jeffrey Radiobeaistgoera rent Shaw is Aros Social security | CENT Special o99saoeevee Bees iy | Lawrence mae 31863 4364- -2691 cia [0 lee 1 2957 F cher | ines, West Acute L Lower Back F Pain ee James, ip 95363 | ——-| j"
+    },
+    {
+        "image": "tor_synth_6_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name, Last name 5 Preferred ni atient identifier Melissa| “Hatfield \"Edward 2891 Gend Date of birth Blood ty, Last updated date ender M a le ate of bi October 22 lood type AB- asi enor Tes 003 Add it Sti Zip cod ress PSC 7059, Box ee. APO AP Joh nsonburg Surigao R978 Emergency contact Full name oy Relationship S i bl i n g Contact ™™00771 93289 me\" CarlMoore |\" Guardian |“ \"09257402688 Insurance information i I i Contact Insurance carrier pstlonblealD Insurance plan A eh eaeten ontact ™\"39666420850 Policy number 697925 4 Group number 5 Social secur IB A I69 1 -894¢ Health information Physician information Name Designation speciality Phone Address Notes Jeremy en ¥peciaist) 09934086792 “Boning Ke’ Lawrence 31865 Jeffre Radiologist 42957 Fletcher Sh aes 09878909373 Pines, West. Known medical conditions Acute Lower Back Pain Allergies Pollen"
+    },
+    {
+        "image": "tor_synth_6_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name, Last name elissa Hatfield Date of birth Blood t Last updated dat Male Octghsr se |e AB- pent 18009 PSC 7059, Box 7380, APO AP 57906 JoFinsonbut8hsypee P8378 Emergency Contact ‘tient identifier Gender Preferred “Edwa r 289 1 Address Full name crarah Relationship S iblin g Contact “O90 771 9328 0 Full name Carl Moore Relationship Insurance information Guardian \"89257402688 Insurance carrier Insul: r Health Softee 6979251 Health information Insurance plan enior C, Advan CHE, Group number Policy number Physician information Name Designation speciality Jeremy Qe pecaiest 09934086792 on iy Ped Lawrence 3186 7 99878909373 “BR5ZFigtcher Ines, West James, ID 95363 Phone Address Radiologist Known medical Conditions Acute Lo Allergies wer Back Pain Pollen |"
+    },
+    {
+        "image": "tor_synth_6_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Og \"2801 ENE PSC FOSS. 58, Box 73 7380, A OAP JéHinsonbut rg suri be eo Emergency coniact Sars _ Cr tea Full name 7 ~~ i rs en i. Carl Moore _ a vanes information Moaith ean Physician information i Name Jeremy Lawrence Jeffrey _ Shaw PE Pollen LL"
+    },
+    {
+        "image": "tor_synth_7_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred name »| Patient identifier Jessica Moss Nathaniel 4822 Gender Date of birth Blood t July 01 199: type Last updated date Female uly 8 B+ April 19 2007 Address 43117 Martinez Skyway Apt. 998, North City State Suri Zip code, . 998, ri Edwinton, WA 77207 JessieStay itso, 6403 Emergency contact Full name Elizabeth Relationship Pa re nt Contact \"™\"09597238274 Full name Jeffrey Crawford Jr Relationship Sibling Contact \"94 8321 2497 Insurance information Insurance carrier i Insurance plan Contact num! le Bre Employee ealt Wellness Plan 6980179889 Policy number 4 344829 Group number Social “46 74 9238 262 Health information Physician information Name Designation speciality Phone Address Notes FamelaAnesthesiologig9s 1023631 “Fae, Sttatch. Pana Urologist 99852483920 i. Known medical conditions Mild Dehydration Dust Mites Allergies"
+    },
+    {
+        "image": "tor_synth_7_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record gE Patient cntormet art yway Api, PWR TP “EI izabeth e i Jeffrey Crawford Jr. Empl oyee Welines P. Fasagenmennen ope 10236: 312 L Porter. oe an _ Mild Dehydration __ Fo Dust Mites"
+    },
+    {
+        "image": "tor_synth_7_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred pame Patient identifier Jessica Moss Nathaniel 4822 Gender Date of birth Blood type Last updated date Female July 01) 1998 B+ April 19 2007 Address 43117 Martinez Skywa' Apt 9 998, North CY Lake Site Suriga Edwinton, WA 772 Jessicastad _del rte P EA03 Emergency contact Full name Elizabeth Relationship Pa rent Contact \"095972 38274 Fullname Jeffrey Crawford Jr. Sibling owe “O91 83212497 Insurance information Insurance carrier AlliedCare Insurance plan Employee Contact number Heath Wellness Plan 69801798892 Policy number 41344829 CTCL DLE 1 Social “““ABT4 9238 26 26 Health information Physician information Name Designation speciality Phone Address Notes PamelaAnesthesiologig951023631 2 479 sckway cute Sorter \"WA 20689 Pana Urologist 99852483920 , sie. Known medical conditions Mild Dehydration Allergies Dust Mites"
+    },
+    {
+        "image": "tor_synth_7_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information a eee VATS fee RS SEN eee ee ——- uae First name Last name pemnreds ent identifier Jessica “\"” Moss _ ‘Nathaniél”” 4822. | Gender Female Date of dirth July 04 1998 l oon B+ Last roe SS Se i “Aeros 43117 Martinez Skyway Boy 998, North Cty State Surigao ean }———__ Eatminton, WA? a Jesstttad dei Norte i 6403 Emergency contact — Elizabeth ~— Parent. Ena “09597238274 Full name setrey Cc pewtord Jr. ——— EEE eae at Relationship “er Sibling \"99183212497 irae information > Z Sn aa insurance carrier “Ali dCare insurance plan Ee joyee j Contact numi Mesias, °\"igo1798892 i Policy ona jo 1344829 I Geta a me cres 9238- 262 i Health information | Faupeletesthesioloaigost0296313 lege Sito | 732, Paborough, i A 29689 i i na Urologist Ae 220Mebega | Pan, 09852462920, Matthewfurt, 1D 87261 a oo) Ds 4 oe i = Dust st Mites"
+    },
+    {
+        "image": "tor_synth_7_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Preferred game s| Patient identifier Jessica Moss Nathaniel\" 4822 Gender Date of birth Blood type Last updated date Female July 01 1998 B+ April 19 2007 Zip \"6A. 03 Address 43117 Martinez Skyway Apt. 998, North SY Lake. S° Surigao Edwinton, WA 77207 Jessicasta del Norte Emergency contact Full name Elizabeth Relationship Pa re nt Contact \"9597238274 Full name Jeffrey Crawford Jr. Relationship Sibling Contact ™m O4 8321 2497 Insurance information Insurance carrier AlliedCare Insurance plan Employee Contact number Hear wellness Pian 69801798892 “ve 1344829 =\" F674 9238 26 2 Health information Physician information Name Designation speciality Phone Address Notes FamelaAnesthesiologiga5 1 0236312 1225 deck way Suite orter WA 29689 Pane, Urelesist 99852483920 si Known medical conditions Mild Dehydration Allergies Dust Mites"
+    },
+    {
+        "image": "tor_synth_8_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Mecord Stat “Quezon” 0984 46596) _ Sibli ing Spouse { AOpen informa ——— ONE: i bei) Phone Jack ae cas 748 30 wil jams. a l Kelly _Carter__"
+    },
+    {
+        "image": "tor_synth_8_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First nam Last ni referred name atient identifier Stephen \"Velazquez\" Amy |*“\"\"“\"\" gs60 Gender Date of bi loo e ast updated date Female pore DSP SabE meee AB- \"October 18 2004 Address i i 752 Smith Garden Apt. 576, East city Stat Zip cod Kellymouth, FL 72423\" wont, Quezon 7695 Emergency contact mines ya\" Sibling “09846596850 Full name Chri Relationshi Contact num! “stops Lope Spouse \"99098234898 Insurance information Insurance carrier CarePlus Insurance plan Contact number Insurance Hea ht SRletd 69627224771 Policy number 24 4 7530 Group number 2 Social SeuTVARQ 532 1 -486! Health information Physician information Name Designation speciality Phone Address Notes Nephrologist09104374830 *72 2 elouey wirss ms Julianton, TN 39763 721 Blair Vista, Kelly Elndocrinologig9342472990 Moonview OR Carter 40539 Known medical conditions Postoperative Recovery Status Allergies Dairy Products"
+    },
+    {
+        "image": "tor_synth_8_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information irst nam [vast na Preferred name Patient i Jentifier Stephen “Velazquez” oe Amy _ 8860 Date of birth December Blood type AB Last updated date October 18 2001 t. 576, East City Stal Zip cod egg eet fiche! Quezon \"7695 Gender Female Address 752 Smith Garden A\\ Kellymouth, FLT 423 Emergency contact Relationship Sibling” cone) 9846596850 Full name TRereRe 7 name. 7 P i - 3elationshi fontact num! “futrane cnestopher Lopez NY SPOUSE _ [em \"9098234898 Ingurance information Insurance carrier CarePlus Insurance plan Contact num HesktShiela 69627224771 Insurance om Group ; Social “\"'3709- 5327 1- -486: 2 Policy number 241 753¢ Health Ith information Physician information Name Designation speciality Phone Address Notes Nephrologist99 104374830 \"Wakes South wishes Julianton, TN 39763 are Endocrinologigga42472990 Tease __| — | —__— Known medical conditions Postoperative Recovery Status Allergies Dairy Products."
+    },
+    {
+        "image": "tor_synth_8_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal aa ie Patient information Kell ly _ Garter i ‘K HOWR Fealeal Reni i postone srati ve Recovery Status | noe | . Dai iry Products -"
+    },
+    {
+        "image": "tor_synth_8_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Recard “ela jazquez gg6o i Last ni: “wh en —— Kelly En Oe L Carter __| = Pos estoperati ve e Recovery Status. P a Dai iry Products |"
+    },
+    {
+        "image": "tor_synth_9_aug1.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information “™ Corey |\" smith [> Kimber y\"*\" 6060 Gender Male Date of birth September Blood type O- nln Pon ‘ws 452 Weaver Unions, Wes Baile ytowr\"| Isabela “\"1301| Emergency contact Full name Veinoke, Relationship Bi ri end ei “™O99 75154459 me\" Nicholas Perez sone Spouse \"09264311336 Insurance carrier Life ure Medical Insurance plan bf ea Contact \"694 0 1 8 1 3858 Policy number 4 792 548 Group number 1 Social TBS -506 7 49 1 Physician information Name Designation speciality Phone Address abriel Oncologist 09513599349 8303 Brett Islands arm Hendricksshi ire, NE 4670 “Vaan [Mmonolalestzs51087 Aen 008 Heights 6, Williamvill, 71612 Notes Known medical conditions L Upper Respiratory Tract Infection Allergies Eggs"
+    },
+    {
+        "image": "tor_synth_9_aug2.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record t information 6910 1813858 -@ plan Premi mm Ph WR rc abr ial (On scologist 095135 599840 He Lt farmon jpper Respi ratory Tract Infection |"
+    },
+    {
+        "image": "tor_synth_9_aug3.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record Patient information First name Last name Corey S m ith Preferred Ri m ber| yr\" identifier 6060 Gender Date of birth Sepiembey Blood type Last updated date 17 2001 O- Male December 11 2008 Address 452 Wi Uni West a State Zip code, Aetna er nian Ne Baileytowm sabela| \"1301 Emergency contact Full name Ri JOKE Relationship Frie n d tei} \"™™AQ9751 54459 Full name Relationship Nicholas Perez Spouse _ \"9264311336 Insurance information Insurance carrier Lifeguire Medical Insurance plan bremiym Contact “\"594 01 81 3858 Policy number 4792548 Group number 4 Social Secure -5067 49 1 5 Health information Physician information Name Designation speciality Phone Address Notes abriel Oncologist 99513599340 feraissite Ne armon 24670 Matthew Pulmonologis os12351387 fa Shiri Known medical conditions Upper Respiratory Tract Infection Allergies Eggs"
+    },
+    {
+        "image": "tor_synth_9_aug4.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Health Record ‘Friend 0927515445 9 Spouse 09264311336 Nicholas Perez insurance information “Premium it 6010 11813858 a _ Plus Pian oo _ 4792548 vem 4 84 -5067 491% Narre | Designation “Prone - Address: Nowes Gabriel “Oncologist 09 513599340 He marnon oe A atthew Pulmonoloisige1235 1387 onnsen Known medial cons ONS Eggs _"
+    },
+    {
+        "image": "tor_synth_9_aug5.png",
+        "label": "medicalrecord",
+        "ocr_text": "Personal Healt heehee Male 9907 PRtE 154459 ‘one Nam: iS spouse Nicholas Perez insurance information 765 5067 4948 Phot Name Des! vatiowsp iality \\ ebay et 308 abriel Gponogt G0 a58000 SS L Harmon a, Mginson Pulmonol ogi 53061 236138 onnson 7"
+    }
+]
