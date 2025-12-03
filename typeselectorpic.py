@@ -1,34 +1,48 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QRadioButton, QButtonGroup
-from ui_typeselection import Ui_MainWindow
+from ui_typeselectionpic import Ui_MainWindow
 import helper
 import folderselection
 import sys
+import json
 
-class TypeSelectorWindow(QMainWindow):
-    def __init__(self, keyword, model, filepath):
+class TypeSelectorPicWindow(QMainWindow):
+    def __init__(self, filepath):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        set1 = set(keyword)
-        set2 = set(model)
-
         self.filepath = filepath
 
-        common = list(set1 & set2)
-        unique1 = list(set1 - set2)
-        unique2 = list(set2 - set1)
+        input_file = "picfolder.json"
+        with open(input_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-        # --- Single button group for all radios ---
+        types = set()
+
+        for area in data.values():
+            for parameter in area.values():
+                for section in parameter.values():
+                    for node in section.values():
+                        for subnode in node.values():
+                            if "document" in subnode:
+                                for doc in subnode["document"]:
+                                    if "type" in doc:
+                                        types.add(doc["type"])
+
+        set1 = sorted(types)
+
+        # Create a container widget for the scroll area
+        scroll_content = QWidget()
+        scroll_content_layout = QVBoxLayout(scroll_content)
+        scroll_content.setLayout(scroll_content_layout)
+        # Add your radio buttons to the scroll_content_layout
         self.radio_group = QButtonGroup(self)
         self.radio_group.setExclusive(True)
+        self.add_radio_buttons(scroll_content_layout, set1)
+        # Assign the widget to the scroll area
+        self.ui.scrollArea.setWidget(scroll_content)
+        self.ui.scrollArea.setWidgetResizable(True)
 
-        # --- Add radios to three separate containers ---
-        self.add_radio_buttons(self.ui.vlayoutbest, common)
-        self.add_radio_buttons(self.ui.vlayoutkeyword, unique1)
-        self.add_radio_buttons(self.ui.vlayoutmodel, unique2)
-
-        # --- Connect signal for all radios ---
         self.radio_group.buttonClicked.connect(self.on_radio_clicked)
 
         # --- Connect buttons ---
@@ -63,7 +77,7 @@ class TypeSelectorWindow(QMainWindow):
 
         if selected_button is not None:
             print(f"✅ One selected: {selected_button.text()}")
-            self.Folder_selector_window = folderselection.FolderSelectorWindow(selected_button.text(), self.filepath, "folders.json")
+            self.Folder_selector_window = folderselection.FolderSelectorWindow(selected_button.text(), self.filepath, "picfolder.json")
             self.Folder_selector_window.show()
         else:
             helper.show_info_dialog(self, "No Selection", "No Type Selected.")
@@ -71,6 +85,6 @@ class TypeSelectorWindow(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = TypeSelectorWindow()
+    window = TypeSelectorPicWindow()
     window.show()
     sys.exit(app.exec())

@@ -1,10 +1,10 @@
 import json
 
-inputjson = "jsons/grades1.json"
-outputjson = "output.json"
+inputjson = "jsons/appletter2.json"
+outputjson = "output2.json"
 
-fromlabel = "grades of sheet"
-tolabel = "gradesofsheet"
+fromlabel = "app"
+tolabel = "appletter"
 
 def fix_labels(input_path, output_path):
     with open(input_path, "r", encoding="utf-8") as f:

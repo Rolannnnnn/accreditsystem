@@ -885,7 +885,7 @@
             "description": "Attendance in continuing professional education (CPE) programs and seminars.", 
             "document": [
               { "type": "Memo", "constraint": ["Office Circular", "About Faculty Seminar"] }, 
-              { "type": "Attendance", "constraint": ["About Faculty Seminar"] }
+              { "type": "Certificate of Attendance", "constraint": ["About Faculty Seminar"] }
             ] 
           },
           "6": { 
@@ -2234,7 +2234,8 @@
             "description": "The class officers and assigned students assists in maintaining cleanliness of classroom, laboratories, corridors and the school campus.",
             "document": [
               { "type": "List of Non-Name", "constraint": ["List of Home room Organization", "List of Home room Assigment"] },
-              { "type": "Schedule/Calendar", "constraint": ["Of Cleaner"] }
+              { "type": "Schedule/Calendar", "constraint": ["Of Cleaner"] },
+              { "type": "Duties and Responsibilities", "constraint": ["Of Homeroom Officer"] }
             ]
           }
         },
@@ -2792,7 +2793,7 @@
             "description": "Admission Services;",
             "document": [
               { "type": "Requirements/Procedures/Guidelines", "constraint": ["For Admission"] },
-              { "type": "Statistics of Applicants", "constraint": [] }
+              { "type": "Statistical Report", "constraint": ["About Applicant"] }
             ]
           },
           "3.2": {
@@ -6107,7 +6108,7 @@
           "1": {
             "description": "Traffic safety in and outside the campus.",
             "document": [
-              { "type": "Traffic Safety Road Networks, Rules and Campus Regulations", "constraint": [] }
+              { "type": "Rules and Regulation", "constraint": ["About Traffic Safety"] }
             ]
           },
           "2": {
