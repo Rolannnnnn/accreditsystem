@@ -1,6 +1,7 @@
 import sys
 import modelengine, keywordengine, helper
 from typeselector import TypeSelectorWindow
+from typeselectorpic import TypeSelectorPicWindow
 import numpy as np
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QProgressDialog
 from PySide6.QtCore import Qt
@@ -46,13 +47,26 @@ class SelectionWindow(QMainWindow):
                 self.ui.imageframe.setText("Invalid file selected.")
 
     def process_file(self):
+        valid = self.is_valid_image_or_pdf(self.ui.pathEdit.text())
+
+        if self.ui.isImageCB.isChecked():
+            if not valid:
+                helper.show_invalid_file_dialog(
+                    self,
+                    "Invalid File",
+                    "Please select a valid image file (PNG, JPG, etc.) or a PDF file."
+                )
+            else:
+                self.type_selector_window = TypeSelectorPicWindow(self.ui.pathEdit.text())
+                self.type_selector_window.show()
+            return
+
         progress = QProgressDialog("Processing file...", "Cancel", 0, 100, self)
         progress.setWindowTitle("Please wait")
         progress.setWindowModality(Qt.WindowModal)
         progress.show()
         QApplication.processEvents()
         progress.setValue(0)
-        valid = self.is_valid_image_or_pdf(self.ui.pathEdit.text())
         progress.setValue(10)
 
         if not valid:

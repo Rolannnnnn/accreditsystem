@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
-    QMainWindow, QMenuBar, QPushButton, QSizePolicy,
-    QStatusBar, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QLabel,
+    QLineEdit, QMainWindow, QMenuBar, QPushButton,
+    QSizePolicy, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -44,6 +44,9 @@ class Ui_MainWindow(object):
         self.imageframe.setGeometry(QRect(80, 29, 341, 241))
         self.imageframe.setFrameShadow(QFrame.Shadow.Raised)
         self.imageframe.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.isImageCB = QCheckBox(self.centralwidget)
+        self.isImageCB.setObjectName(u"isImageCB")
+        self.isImageCB.setGeometry(QRect(150, 350, 201, 20))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -65,5 +68,6 @@ class Ui_MainWindow(object):
         self.processBttn.setText(QCoreApplication.translate("MainWindow", u"Process", None))
         self.pathEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"No File Selected...", None))
         self.imageframe.setText(QCoreApplication.translate("MainWindow", u"No File Selected", None))
+        self.isImageCB.setText(QCoreApplication.translate("MainWindow", u"This Document is Mostly Imagery", None))
     # retranslateUi
 

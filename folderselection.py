@@ -9,18 +9,20 @@ import os
 import shutil
 
 class FolderSelectorWindow(QMainWindow):
-    def __init__(self, type, filepath):
+    def __init__(self, type, filepath, jsonpath):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
         self.type = type
         self.filepath = filepath
-        self.load_checklist("folders.json", self.type)
+        self.jsonpath = jsonpath
+        self.load_checklist(self.jsonpath, self.type)
         self.ui.comboBox.lineEdit().setReadOnly(True)
 
         self.ui.confirmBttn.clicked.connect(lambda: self.copy_selected_files(self.filepath))
         self.ui.cancelBttn.clicked.connect(self.close)
+        self.ui.modeswitch.valueChanged.connect(lambda: self.filter_checkboxes(None))
 
     def load_checklist(self, json_path, selected_type):
         # Load JSON
@@ -142,22 +144,23 @@ class FolderSelectorWindow(QMainWindow):
     def filter_checkboxes(self, changed_item):
         model = self.ui.comboBox.model()
 
-        # Handle "All" item logic
-        all_item = model.item(0)
-        if changed_item == all_item:
-            if all_item.checkState() == Qt.Checked:
-                for row in range(1, model.rowCount()):
-                    model.item(row).setCheckState(Qt.Unchecked)
-                for cb, _ in self.checkboxes:
-                    cb.setChecked(True)
-                    cb.show()
-            else:
-                pass
-            return
-        if changed_item and changed_item != all_item:
-            if changed_item.checkState() == Qt.Checked:
+        if changed_item:
+            # Handle "All" item logic
+            all_item = model.item(0)
+            if changed_item == all_item:
                 if all_item.checkState() == Qt.Checked:
-                    all_item.setCheckState(Qt.Unchecked)
+                    for row in range(1, model.rowCount()):
+                        model.item(row).setCheckState(Qt.Unchecked)
+                    for cb, _ in self.checkboxes:
+                        cb.setChecked(True)
+                        cb.show()
+                else:
+                    pass
+                return
+            if changed_item and changed_item != all_item:
+                if changed_item.checkState() == Qt.Checked:
+                    if all_item.checkState() == Qt.Checked:
+                        all_item.setCheckState(Qt.Unchecked)
         
         # Collect all checked constraints (skip "All")
         selected_constraints = []
@@ -186,6 +189,7 @@ class FolderSelectorWindow(QMainWindow):
                     cb.setChecked(True)
                 else:
                     cb.hide()
+                    cb.setChecked(False)
         else:
             for cb, constraints in self.checkboxes:
                 if all(c in constraints for c in selected_constraints):
@@ -193,6 +197,7 @@ class FolderSelectorWindow(QMainWindow):
                     cb.setChecked(True)
                 else:
                     cb.hide()
+                    cb.setChecked(False)
         
         self.updateComboText()
 
@@ -219,11 +224,6 @@ class FolderSelectorWindow(QMainWindow):
         self.ui.comboBox.lineEdit().setText(", ".join(checked_items))
 
     def copy_selected_files(self, filepath):
-        """
-        Copies the given file (filepath) to all folder paths corresponding
-        to checked checkboxes.
-        Creates folders if needed, and stores them inside the user's Documents folder.
-        """
         if not os.path.isfile(filepath):
             helper.show_invalid_file_dialog(self, "Error", f"The file does not exist:\n{filepath}")
             return
