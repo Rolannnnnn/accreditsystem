@@ -53,7 +53,7 @@ def label_to_type(labels):
     label_map = {
         "Narrativereport": "Narrative Report",
         "Notice": "Notice",
-        "accomplishment": "Accomplishment Report",
+        "accomplishments": "Accomplishment Report",
         "actionplan": "Action Plan",
         "administrative": "Administrative Manual",
         "advertisementhiring": "Advertisment of Hiring",
@@ -91,6 +91,7 @@ def label_to_type(labels):
         "evalform": "Evaluation/Screening Form",
         "expandtraining": "Related Experiences and Trainings Attended",
         "facultypromotion": "Faculty Promotion",
+        "grades of sheet": "Grades",
         "gradesofsheet": "Grades",
         "honorabledismissal": "Files of Honorable Dismissal",
         "ipcr": "Indivudual Performance Commitment Review",

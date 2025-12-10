@@ -38,6 +38,7 @@ class Ui_MainWindow(object):
         self.passText = QLineEdit(self.centralwidget)
         self.passText.setObjectName(u"passText")
         self.passText.setGeometry(QRect(130, 60, 261, 21))
+        self.passText.setEchoMode(QLineEdit.EchoMode.Password)
         self.createBttn = QLabel(self.centralwidget)
         self.createBttn.setObjectName(u"createBttn")
         self.createBttn.setGeometry(QRect(290, 90, 101, 20))

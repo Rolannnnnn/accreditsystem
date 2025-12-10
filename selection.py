@@ -8,20 +8,35 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
 from ui_selection import Ui_MainWindow
 import os
+import view
 from PIL import Image
 from PyPDF2 import PdfReader
 import pytesseract
 import pdf2image
 
 class SelectionWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, logged_user):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.logged_user = logged_user
+        print("Logged in user ID:", self.logged_user)
 
         # Example: connect button
         self.ui.chooseBttn.clicked.connect(self.select_file)
         self.ui.processBttn.clicked.connect(self.process_file)
+        self.ui.logsBttn.clicked.connect(self.show_view_window)
+        self.ui.backBttn.clicked.connect(self.back)
+
+    def back(self):
+        import main
+        self.MainWindow = main.MainWindow()
+        self.MainWindow.show()
+        self.close()
+
+    def show_view_window(self):
+        self.view_window = view.MainWindow()
+        self.view_window.show()
 
     def select_file(self):
         file_path, _ = QFileDialog.getOpenFileName(
@@ -57,8 +72,9 @@ class SelectionWindow(QMainWindow):
                     "Please select a valid image file (PNG, JPG, etc.) or a PDF file."
                 )
             else:
-                self.type_selector_window = TypeSelectorPicWindow(self.ui.pathEdit.text())
+                self.type_selector_window = TypeSelectorPicWindow(self.ui.pathEdit.text(), self.logged_user)
                 self.type_selector_window.show()
+                self.close()
             return
 
         progress = QProgressDialog("Processing file...", "Cancel", 0, 100, self)
@@ -86,12 +102,22 @@ class SelectionWindow(QMainWindow):
                 )
             else:
                 print("Extracted Text:", text)
-                keywordresult = keywordengine.keyword_run(text)
-                progress.setValue(75)
-                modelresult = modelengine.model_run(text)
-                progress.setValue(100)
-                self.type_selector_window = TypeSelectorWindow(keywordresult, modelresult, self.ui.pathEdit.text())
-                self.type_selector_window.show()
+                if text == "":
+                    helper.show_invalid_file_dialog(
+                        self,
+                        "OCR Result Empty",
+                        "No text could be extracted from the file."
+                    )
+                    progress.close()
+                    return
+                else:
+                    keywordresult = keywordengine.keyword_run(text)
+                    progress.setValue(75)
+                    modelresult = modelengine.model_run(text)
+                    progress.setValue(100)
+                    self.type_selector_window = TypeSelectorWindow(keywordresult, modelresult, self.ui.pathEdit.text(), self.logged_user)
+                    self.type_selector_window.show()
+                    self.close()
         progress.close()
 
     # Check if file_path points to a valid image or PDF file.

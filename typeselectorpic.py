@@ -6,12 +6,13 @@ import sys
 import json
 
 class TypeSelectorPicWindow(QMainWindow):
-    def __init__(self, filepath):
+    def __init__(self, filepath, logged_user):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
         self.filepath = filepath
+        self.logged_user = logged_user
 
         input_file = "picfolder.json"
         with open(input_file, "r", encoding="utf-8") as f:
@@ -47,7 +48,13 @@ class TypeSelectorPicWindow(QMainWindow):
 
         # --- Connect buttons ---
         self.ui.confirmBttn.clicked.connect(self.confirm_selection)
-        self.ui.cancelBttn.clicked.connect(self.close)
+        self.ui.cancelBttn.clicked.connect(self.back)
+
+    def back(self):
+        import selection
+        self.MainWindow = selection.SelectionWindow(self.logged_user)
+        self.MainWindow.show()
+        self.close()
 
     def add_radio_buttons(self, container: QWidget, choices: list):
         """Adds a list of radio buttons to a layout and links them to one group."""
@@ -77,8 +84,9 @@ class TypeSelectorPicWindow(QMainWindow):
 
         if selected_button is not None:
             print(f"✅ One selected: {selected_button.text()}")
-            self.Folder_selector_window = folderselection.FolderSelectorWindow(selected_button.text(), self.filepath, "picfolder.json")
+            self.Folder_selector_window = folderselection.FolderSelectorWindow(selected_button.text(), self.filepath, "picfolder.json", self.logged_user)
             self.Folder_selector_window.show()
+            self.close()
         else:
             helper.show_info_dialog(self, "No Selection", "No Type Selected.")
             return False

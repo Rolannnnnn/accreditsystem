@@ -7,22 +7,32 @@ import sys
 import json
 import os
 import shutil
+from db import get_db
 
 class FolderSelectorWindow(QMainWindow):
-    def __init__(self, type, filepath, jsonpath):
+    def __init__(self, type, filepath, jsonpath, logged_user):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.db = get_db()
+
         self.type = type
         self.filepath = filepath
         self.jsonpath = jsonpath
+        self.logged_user = logged_user
         self.load_checklist(self.jsonpath, self.type)
         self.ui.comboBox.lineEdit().setReadOnly(True)
 
         self.ui.confirmBttn.clicked.connect(lambda: self.copy_selected_files(self.filepath))
-        self.ui.cancelBttn.clicked.connect(self.close)
+        self.ui.cancelBttn.clicked.connect(self.back)
         self.ui.modeswitch.valueChanged.connect(lambda: self.filter_checkboxes(None))
+
+    def back(self):
+        import typeselectorpic
+        self.MainWindow = typeselectorpic.TypeSelectorPicWindow(self.filepath, self.logged_user)
+        self.MainWindow.show()
+        self.close()
 
     def load_checklist(self, json_path, selected_type):
         # Load JSON
@@ -235,7 +245,7 @@ class FolderSelectorWindow(QMainWindow):
         copied_count = 0
         debug_logs = []
 
-        for cb, _ in self.checkboxes:
+        for cb, constraints in self.checkboxes:
             if cb.isChecked():
                 parts = [p.strip() for p in cb.text().split(">")]
                 dest_dir = os.path.join(documents_dir, *parts)
@@ -256,7 +266,62 @@ class FolderSelectorWindow(QMainWindow):
 
                     shutil.copy(filepath, dest_path)
                     copied_count += 1
+                    
+                    # Extract classification info from path
+                    # Path format: "Area X > Parameter > Section > Node [> SubKey]"
+                    area_num = 0
+                    parameter = ""
+                    section = ""
+                    node = 0
+                    sub_key = 0.0
+                    
+                    if len(parts) >= 1:
+                        # Extract area number from "Area X" or just use the area name
+                        area_str = parts[0]
+                        if area_str.startswith("Area "):
+                            try:
+                                area_num = int(area_str.split()[1])
+                            except (IndexError, ValueError):
+                                area_num = 0
+                    
+                    if len(parts) >= 2:
+                        parameter = parts[1]
+                    
+                    if len(parts) >= 3:
+                        section = parts[2]
+                    
+                    if len(parts) >= 4:
+                        # Extract node number
+                        try:
+                            node = int(parts[3])
+                        except ValueError:
+                            node = 0
+                    
+                    if len(parts) >= 5:
+                        # Extract sub_key
+                        try:
+                            sub_key = float(parts[4])
+                        except ValueError:
+                            sub_key = 0.0
+                    
+                    # Add document to database
+                    doc_id = self.db.add_document(dest_path, self.type)
+                    
+                    # Add classification
+                    classification_id = self.db.add_classification(
+                        document_id=doc_id,
+                        area_num=area_num,
+                        parameter=parameter,
+                        section=section,
+                        node=node,
+                        sub_key=sub_key
+                    )
+                    
+                    # Add log entry
+                    self.db.add_log(classification_id, self.logged_user)
+                    
                     debug_logs.append(f"✔ Copied to: {dest_path}")
+                    debug_logs.append(f"  DB: doc_id={doc_id}, classification_id={classification_id}")
 
                 except Exception as e:
                     debug_logs.append(f"❌ Failed to copy to {dest_dir}: {e}")
