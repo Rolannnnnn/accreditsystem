@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(488, 441)
+        MainWindow.resize(488, 465)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.chooseBttn = QPushButton(self.centralwidget)
@@ -47,6 +47,9 @@ class Ui_MainWindow(object):
         self.isImageCB = QCheckBox(self.centralwidget)
         self.isImageCB.setObjectName(u"isImageCB")
         self.isImageCB.setGeometry(QRect(150, 350, 201, 20))
+        self.logsBttn = QPushButton(self.centralwidget)
+        self.logsBttn.setObjectName(u"logsBttn")
+        self.logsBttn.setGeometry(QRect(200, 380, 79, 24))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -69,5 +72,6 @@ class Ui_MainWindow(object):
         self.pathEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"No File Selected...", None))
         self.imageframe.setText(QCoreApplication.translate("MainWindow", u"No File Selected", None))
         self.isImageCB.setText(QCoreApplication.translate("MainWindow", u"This Document is Mostly Imagery", None))
+        self.logsBttn.setText(QCoreApplication.translate("MainWindow", u"View Logs", None))
     # retranslateUi
 

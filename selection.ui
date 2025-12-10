@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>488</width>
-    <height>441</height>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -99,6 +99,19 @@
     </property>
     <property name="text">
      <string>This Document is Mostly Imagery</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logsBttn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>380</y>
+      <width>79</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>View Logs</string>
     </property>
    </widget>
   </widget>
