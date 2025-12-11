@@ -1,0 +1,24 @@
+# PySide6 - Qt framework for GUI
+PySide6>=6.6.0
+
+# PDF Processing
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# OCR (Optical Character Recognition)
+pytesseract>=0.3.10
+
+# Scientific Computing
+numpy>=1.24.0
+
+# Machine Learning - Transformers and PyTorch
+transformers>=4.35.0
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Machine Learning - Traditional ML (for keyword scoring)
+scikit-learn>=1.3.0
