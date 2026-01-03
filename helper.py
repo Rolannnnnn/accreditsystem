@@ -82,6 +82,7 @@ def label_to_type(labels):
         "collegecode": "College Code",
         "collegesyllabi": "Course Syllabi",
         "consultation": "Consultation Programs",
+        "coursesyllabus": "Course Syllabus",
         "criteria": "Criteria",
         "diploma": "Diploma",
         "dtr": "Daily Time Record",

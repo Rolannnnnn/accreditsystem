@@ -6,81 +6,158 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>345</width>
+    <width>423</width>
     <height>409</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>typeselectorpic</string>
+   <string>Type Selector</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #B8E0FF;
+}
+
+QWidget {
+	background-color: #B8E0FF;
+}
+
+QPushButton {
+    border-radius: 0px;
+    border: 2px solid #0078d4;
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 3px 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffffff;
+	color: #0078d4;
+}
+
+QPushButton:pressed {
+    background-color: #ffffff;
+	color: #ffffff;
+}
+
+QLineEdit {
+	border-radius: 10px;
+	padding: 10px 14px;
+	margin: 2px;
+	background-color: #ffffff;
+}
+
+QCheckBox::indicator {
+	border-radius: 5px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #0078d4;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0078d4;
+    border: 2px solid #0078d4;
+}
+
+QRadioButton::indicator {
+	border-radius: 8px;
+	border: 2px solid #0078d4;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: #ffffff;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #0078d4;
+}
+
+QComboBox {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView::indicator {
+	border-radius: 5px;
+}
+
+QComboBox QAbstractItemView::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+QComboBox QAbstractItemView::indicator:checked {
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>101</width>
-      <height>31</height>
+      <width>381</width>
+      <height>331</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Select Type</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="confirmBttn">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>320</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Confirm</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="cancelBttn">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>320</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Cancel</string>
-    </property>
-   </widget>
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>281</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>279</width>
-       <height>239</height>
-      </rect>
-     </property>
-    </widget>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Quicksand</family>
+         <pointsize>11</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>SELECT TYPE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>377</width>
+          <height>268</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="cancelBttn">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="confirmBttn">
+         <property name="text">
+          <string>Confirm</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -88,7 +165,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>345</width>
+     <width>423</width>
      <height>33</height>
     </rect>
    </property>

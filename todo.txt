@@ -3,5 +3,3 @@ check every document type and check if there is a mismatch or constraint that ca
 there are some school activity in list of non-name
 
 replace constraints with ALL if all the document type must be included in that setting
-
-approvals

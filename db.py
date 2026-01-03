@@ -133,7 +133,7 @@ class DatabaseManager:
             print(f"Error inserting classification: {query.lastError().text()}")
             return None
     
-    def add_account(self, username, password, name, position=""):
+    def add_account(self, username, password, name, position):
         query = QSqlQuery()
         query.prepare("""
             INSERT INTO accounts (username, password_hash, name, position)

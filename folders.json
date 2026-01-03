@@ -309,7 +309,7 @@
             "document": [
               { "type": "Faculty Workload", "constraint": [] },
               { "type": "Accomplishment Report", "constraint": ["Of Faculty"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty"] },
               { "type": "Award", "constraint": ["Of Faculty"] },
               { "type": "Appointment/Designation", "constraint": ["Of Faculty", "As Researcher/Extensionist"] },
               { "type": "Journal of Publication", "constraint": [] },
@@ -541,7 +541,7 @@
             "description": "Administrative arrangements are adopted when vacancies or leaves occur during the term.",
             "document": [
               { "type": "Memo", "constraint": ["About Leave of Absence"] },
-              { "type": "Letter", "constraint": ["Request", "For Substitute"] },
+              { "type": "Request Letter", "constraint": ["For Substitute"] },
               { "type": "Administrative Manual", "constraint": [] }
             ]
           }
@@ -605,7 +605,7 @@
             "document": [
               { "type": "Faculty Workload", "constraint": [] },
               { "type": "Accomplishment Report", "constraint": ["Of Faculty"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty"] },
               { "type": "Plaque of Appreciation/Awards", "constraint": [] },
               { "type": "Appointment/Designation", "constraint": ["Of Faculty", "As Researcher/Extensionist"] },
               { "type": "Journal of Publication", "constraint": ["Of Faculty"] },
@@ -764,7 +764,7 @@
             "document": [
               { "type": "Development Plan", "constraint": ["Institutional Faculty Development Plan"] },
               { "type": "Attendance", "constraint": ["About Faculty Seminar"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty"] }
+              { "type": "Invitation Letter", "constraint": ["Of Faculty"] }
             ]
           },
           "1": { 
@@ -814,7 +814,7 @@
               { "type": "Program Invitation", "constraint": ["About Faculty Seminar"] },
               { "type": "Development Plan", "constraint": ["Training Design"] },
               { "type": "Attendance", "constraint": ["About Faculty Seminar"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty"] },
               { "type": "Certificate of Training", "constraint": ["Of Faculty"] },
               { "type": "Accomplishment Report", "constraint": ["Of Faculty"] }
             ]
@@ -898,7 +898,7 @@
             "description": "Publishing scholarly articles and research outputs.", 
             "document": [
               { "type": "Research Output and Publication", "constraint": ["Made by Faculty"] }, 
-              { "type": "Letter", "constraint": ["Invitation", "About Research"] }, 
+              { "type": "Invitation Letter", "constraint": ["About Research"] }, 
               { "type": "Certificate of Participation", "constraint": ["About Research", "Of Faculty"] }
             ] 
           },
@@ -1022,7 +1022,7 @@
           "0": {
             "description": "Faculty serve as resource persons, lecturers, or consultants in their field of specialization.",
             "document": [
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty"] },
               { "type": "Copy of Program", "constraint": ["Of Faculty", "Based on FDP"] },
               { "type": "Award", "constraint": ["Of Faculty"] },
               { "type": "Attendance", "constraint": ["About Faculty Seminar", "To a Meeting"] },
@@ -1036,7 +1036,7 @@
             "description": "Faculty present papers in local, regional, national, and international fora.",
             "document": [
               { "type": "Research Output and Publication", "constraint": ["Made by Faculty"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty", "About Research"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty", "About Research"] },
               { "type": "Certificate of Participation", "constraint": ["About Research"] }
             ]
           }
@@ -1046,7 +1046,7 @@
             "description": "Faculty publish papers in regional, national, and international journals.",
             "document": [
               { "type": "Research Output and Publication", "constraint": ["Made by Faculty"] },
-              { "type": "Letter", "constraint": ["Invitation", "Of Faculty", "About Research"] },
+              { "type": "Invitation Letter", "constraint": ["Of Faculty", "About Research"] },
               { "type": "Certificate of Participation", "constraint": ["About Research"] }
             ]
           }
@@ -1669,7 +1669,8 @@
           "2": {
             "description": "Educational tours/learning visits/other co-curricular activities;",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About Field Trip", "Confirmation"] },
+              { "type": "Request Letter", "constraint": ["About Field Trip"] },
+              { "type": "Confirmation Letter", "constraint": ["About Field Trip"] },
               { "type": "Waiver", "constraint": ["Of Student", "About Field Trip"] },
               { "type": "Narrative Report", "constraint": ["About Field Trip"] },
               { "type": "Syllabi", "constraint": ["Showing Field Trip as One of the Teaching Strategies"] }
@@ -1678,7 +1679,7 @@
           "3": {
             "description": "Peer teaching/cooperative learning; and",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About Peer Teaching"] },
+              { "type": "Request Letter", "constraint": ["About Peer Teaching"] },
               { "type": "Lesson", "constraint": ["For Employed Cooperative Learning Strategy"] }
             ]
           },
@@ -1901,7 +1902,7 @@
           "6": {
             "description": "Conduct of experimental classes",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About conduct of Experimental Class"] },
+              { "type": "Request Letter", "constraint": ["About conduct of Experimental Class"] },
               { "type": "Lesson", "constraint": ["For Experimental Class and Recommendation"] }
             ]
           },
@@ -2942,7 +2943,8 @@
               { "type": "Accomplishment Report", "constraint": ["About Student Affairs Services"] },
               { "type": "Minutes of the Meeting", "constraint": ["About Student Affairs Services"] },
               { "type": "Attendance", "constraint": ["About Student Affairs Services", "To a Meeting"] },
-              { "type": "Letter", "constraint": ["Request", "Invitation", "For Student Activity/Program"] },
+              { "type": "Invitation Letter", "constraint": ["For Student Activity/Program"] },
+              { "type": "Request Letter", "constraint": ["For Student Activity/Program"] },
               { "type": "Souvenir Program", "constraint": ["About Student Affairs Services"] }
             ]
           }
@@ -3138,7 +3140,7 @@
             "description": "Career seminars and job placement services are available for the students.",
             "document": [
               { "type": "Student Activity", "constraint": ["Career Seminar and Job Placement"] },
-              { "type": "Letter", "constraint": ["Invitation", "For Career Seminar and Job Placement"] },
+              { "type": "Invitation Letter", "constraint": ["For Career Seminar and Job Placement"] },
               { "type": "Career Seminar and Job Placement Program", "constraint": [] },
               { "type": "Program of Activity", "constraint": ["For Career Seminar and Job Placement"] },
               { "type": "Attendance", "constraint": ["About Career Seminar and Job Placement"] },
@@ -3250,7 +3252,7 @@
             "description": "The Guidance Office prepares valid appraisal data of students for career and job placement.",
             "document": [
               { "type": "Bulletin of Information", "constraint": ["About Career and Job Placement"] },
-              { "type": "Letter", "constraint": ["Invitation", "For Career Seminar and Job Placement"] },
+              { "type": "Invitation Letter", "constraint": ["For Career Seminar and Job Placement"] },
               { "type": "Announcement", "constraint": ["About Career and Job Placement"] },
               { "type": "Information Drive", "constraint": ["About Career and Job Placement"] }
             ]
@@ -3292,7 +3294,7 @@
             "description": "Information materials on career and job opportunities are made accessible.",
             "document": [
               { "type": "Bulletin of Information", "constraint": ["About Career and Job Placement"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Career and Job Placement"] },
+              { "type": "Invitation Letter", "constraint": ["About Career and Job Placement"] },
               { "type": "Announcement", "constraint": ["About Career and Job Placement"] },
               { "type": "Information Drive", "constraint": ["About Career and Job Placement"] },
               { "type": "Communication", "constraint": ["About Career and Job Placement"] }
@@ -3308,7 +3310,7 @@
               { "type": "Personal Data Sheet", "constraint": ["Of Alumni"] },
               { "type": "Souvenir Program", "constraint": ["About Alumni Homecoming"] },
               { "type": "Communication", "constraint": ["Regarding Employment Opportunities for Alumni"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Alumni"] },
+              { "type": "Invitation Letter", "constraint": ["About Alumni"] },
               { "type": "Attendance", "constraint": ["About Alumni"] },
               { "type": "Contract/Memorandum of Agreement", "constraint": ["Indicating Tangible Projects of Alumni"] }
             ]
@@ -3765,7 +3767,7 @@
               { "type": "Budget Allocation and Utilization", "constraint": ["About Student Seminar"] },
               { "type": "Memo", "constraint": ["About Student Seminar and Training"] },
               { "type": "Voucher", "constraint": ["About Student Seminar and Training"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Student Seminar and Training"] },
+              { "type": "Invitation Letter", "constraint": ["About Student Seminar and Training"] },
               { "type": "Travel Order", "constraint": ["About Student Seminar and Training"] },
               { "type": "Award", "constraint": ["Of Student", "About Student Seminar and Training"] }
             ]
@@ -4059,7 +4061,7 @@
               { "type": "Schedule/Calendar", "constraint": ["Of Sports Activity"] },
               { "type": "Action Plan", "constraint": ["About Sports"] },
               { "type": "Accomplishment Report", "constraint": ["About Sports"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Sports"] },
+              { "type": "Invitation Letter", "constraint": ["About Sports"] },
               { "type": "Award", "constraint": ["Of Student", "About Sports"] },
               { "type": "Communication", "constraint": ["About Sports Activity"] }
             ]
@@ -4252,7 +4254,7 @@
               { "type": "Consultation Programs", "constraint": [] },
               { "type": "Attendance", "constraint": ["About Research Agenda", "To a Meeting"] },
               { "type": "Minutes of the Meeting", "constraint": ["About Research Agenda"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Research Agenda"] },
+              { "type": "Invitation Letter", "constraint": ["About Research Agenda"] },
               { "type": "Communication", "constraint": ["About Research Agenda"] }
             ]
           },
@@ -4902,7 +4904,7 @@
               { "type": "Program Plan", "constraint": ["Of Extension Program"] },
               { "type": "Minutes of the Meeting", "constraint": ["About Extension Program"] },
               { "type": "Attendance", "constraint": ["About Extension Program", "To a Meeting"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Extension Program"] },
+              { "type": "Invitation Letter", "constraint": ["About Extension Program"] },
               { "type": "Communication", "constraint": ["About Extension Program"] },
               { "type": "Contract/Memorandum of Agreement", "constraint": ["Of Extension Program"] }
             ]
@@ -4925,7 +4927,7 @@
             "document": [
               { "type": "College Extension Program", "constraint": [] },
               { "type": "Attendance", "constraint": ["About Extension Program"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Extension Program", "About Conduct of Extension Program"] }
+              { "type": "Invitation Letter", "constraint": ["About Extension Program", "About Conduct of Extension Program"] }
             ]
           }
         },
@@ -4961,7 +4963,7 @@
               { "type": "College Extension Program", "constraint": [] },
               { "type": "Attendance", "constraint": ["About Extension Program"] },
               { "type": "Travel Order", "constraint": ["About Extension Program"] },
-              { "type": "Letter", "constraint": ["Request", "About Extension Program", "Approval"] },
+              { "type": "Request Letter", "constraint": ["About Extension Program", "Approval"] },
               { "type": "Accomplishment Report", "constraint": ["About Extension Program"] }
             ]
           },
@@ -4979,7 +4981,7 @@
               { "type": "Result of Monitoring and Evaluation", "constraint": ["About Extension Program"] },
               { "type": "Action Plan", "constraint": ["About Monitoring and Evaluation of Extension Program"] },
               { "type": "In-House/Sectoral Review", "constraint": ["About Extension Program"] },
-              { "type": "Letter", "constraint": ["Invitation", "About Trade Fair"] }
+              { "type": "Invitation Letter", "constraint": ["About Trade Fair"] }
             ]
           }
         },
@@ -5104,7 +5106,7 @@
           "1": {
             "description": "additional funding;",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "For Financial Assistance for Extension Program"] },
+              { "type": "Request Letter", "constraint": ["For Financial Assistance for Extension Program"] },
               { "type": "List of linkages with their financial support", "constraint": [] },
               { "type": "Contract/Memorandum of Agreement", "constraint": ["Of Additional Funding", "Of Extension Program"] },
               { "type": "Action Plan", "constraint": ["About Extension Program Funding"] }
@@ -5113,7 +5115,7 @@
           "2": {
             "description": "technical assistance and service inputs.",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "Invitation", "For Financial Assistance for Extension Program", "About Technical Assistance and Service Input"] },
+              { "type": "Request Letter", "constraint": ["Invitation", "For Financial Assistance for Extension Program", "About Technical Assistance and Service Input"] },
               { "type": "List Non-Name", "constraint": ["Linkages for Technical Assistance and Service Input"] },
               { "type": "Profile of Beneficiary of Extension Program", "constraint": [] },
               { "type": "Contract/Memorandum of Agreement", "constraint": ["About Technical Assistance and Service Input", "Of Extension Program"] }
@@ -5212,7 +5214,7 @@
           "4": {
             "description": "out-sourcing of funds, materials and other service inputs;",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "For Financial Assistance for Extension Program", "About Materials and Services to Funding Agency"] },
+              { "type": "Request Letter", "constraint": ["For Financial Assistance for Extension Program", "About Materials and Services to Funding Agency"] },
               { "type": "Contract/Memorandum of Agreement", "constraint": ["Of Additional Funding", "Of Extension Program"] }
             ]
           },
@@ -5325,7 +5327,7 @@
               { "type": "Communication", "constraint": ["About the Library"] },
               { "type": "Attendance", "constraint": ["About the Library", "To a Meeting"] },
               { "type": "Minutes of the Meeting", "constraint": ["About the Library"] },
-              { "type": "Letter", "constraint": ["Invitation", "For Chief Librarian"] }
+              { "type": "Invitation Letter", "constraint": ["For Chief Librarian"] }
             ]
           }
         },
@@ -5507,7 +5509,7 @@
             "document": [
               { "type": "Manual", "constraint": ["Library Procedural Manual"] },
               { "type": "List of Non-Name", "constraint": ["Library Books Repaired"] },
-              { "type": "Letter", "constraint": ["Request", "About Repair/Maintenance of Library Resource"] }
+              { "type": "Request Letter", "constraint": ["About Repair/Maintenance of Library Resource"] }
             ]
           }
         }
@@ -5537,7 +5539,7 @@
             "description": "The library provides sufficient research books and materials to supplement the clients' curricular needs.",
             "document": [
               { "type": "Syllabi", "constraint": ["Course Syllabi"] },
-              { "type": "Letter", "constraint": ["Request", "About Research Material"] },
+              { "type": "Request Letter", "constraint": ["About Research Material"] },
               { "type": "List of Non-Name", "constraint": ["References by Program used in Research Material"] }
             ]
           }
@@ -5576,7 +5578,7 @@
             "document": [
               { "type": "Manual", "constraint": ["Library Procedural Manual"] },
               { "type": "Collection Development Policy Statement (CDPS)", "constraint": [] },
-              { "type": "Letter", "constraint": ["Request", "About Weeding Activity"] },
+              { "type": "Request Letter", "constraint": ["About Weeding Activity"] },
               { "type": "Equipment Inventory", "constraint": ["Weeding-Out Material"] }
             ]
           }
@@ -6405,7 +6407,7 @@
             "document": [
               { "type": "Schedule/Calendar", "constraint": ["About Testing of Drinking Water"] },
               { "type": "Inspection Report", "constraint": ["About Drinking Water"] },
-              { "type": "Letter", "constraint": ["Request", "About Testing of Drinking Water"] },
+              { "type": "Request Letter", "constraint": ["About Testing of Drinking Water"] },
               { "type": "Receipt", "constraint": ["Of Testing of Drinking Water"] }
             ]
           }
@@ -6976,7 +6978,7 @@
           "0": {
             "description": "A conference room is available for students' use.",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About the Use of Conference Room"] },
+              { "type": "Request Letter", "constraint": ["About the Use of Conference Room"] },
               { "type": "Logbook", "constraint": ["Of Use of Conference Room"] },
               { "type": "Equipment Inventory", "constraint": ["Of Conference Room Furniture and Fixtures"] }
             ]
@@ -7422,7 +7424,7 @@
             "description": "Demonstration and training on the proper use of fire extinguishers, first aid kit and other emergency measures are periodically conducted.",
             "document": [
               { "type": "Minutes of the Meeting", "constraint": ["About Drill"] },
-              { "type": "Letter", "constraint": ["Request", "To BFP", "About Drill"] },
+              { "type": "Request Letter", "constraint": ["To BFP", "About Drill"] },
               { "type": "Certificate of Training", "constraint": ["From Bureau of Fire Protection", "On Precautionary Measure"] },
               { "type": "Certification by Medical Team", "constraint": [] },
               { "type": "Drill Report", "constraint": ["Fire Drill"] }
@@ -7591,7 +7593,7 @@
           "0": {
             "description": "The institution has a maintenance and repair department/unit manned by skilled personnel who provides services and direct call.",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About Repair Department/Unit"] },
+              { "type": "Request Letter", "constraint": ["About Repair Department/Unit"] },
               { "type": "Appointment/Designation", "constraint": ["As Repair Department/Unit Technician"] },
               { "type": "Organizational Chart", "constraint": ["About Repair Department/Unit"] },
               { "type": "Certificate of Training", "constraint": ["On Repair of Equipment/Apparatus"] }
@@ -7634,7 +7636,7 @@
           "0": {
             "description": "The laboratory equipment and instruments are in good condition and are periodically calibrated.",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About Laboratory Equipment Maintenance"] },
+              { "type": "Request Letter", "constraint": ["About Laboratory Equipment Maintenance"] },
               { "type": "Memo", "constraint": ["About Facility/Equipment/Supply Maintenance", "About the Laboratory"] },
               { "type": "Minutes of the Meeting", "constraint": ["About Facility/Equipment/Supply Maintenance", "About the Laboratory"] },
               { "type": "Certificate of Calibration", "constraint": ["Of Laboratory Equipment"] }
@@ -7724,7 +7726,7 @@
           "0": {
             "description": "The institution implements the special provisions as listed in the CMO.",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "Purchase of Laboratory Equipment"] },
+              { "type": "Request Letter", "constraint": ["Purchase of Laboratory Equipment"] },
               { "type": "Material Requisition", "constraint": ["About the Laboratory"] }
             ]
           }
@@ -8419,7 +8421,7 @@
           "0": {
             "description": "All approved requests for procurement are published in the Philippine Government Electronic Procurement System (Phil-GEPS).",
             "document": [
-              { "type": "Letter", "constraint": ["Request", "About Procurement"] },
+              { "type": "Request Letter", "constraint": ["About Procurement"] },
               { "type": "Phil-GEPS System", "constraint": [] }
             ]
           }
@@ -8444,7 +8446,7 @@
             "description": "All procurement transactions are transparent.",
             "document": [
               { "type": "Bulletin of Information", "constraint": ["About Procurement Transaction"] },
-              { "type": "Letter", "constraint": ["Request", "About Procurement"] }
+              { "type": "Request Letter", "constraint": ["About Procurement"] }
             ]
           }
         }

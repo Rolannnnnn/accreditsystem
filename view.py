@@ -74,7 +74,7 @@ class MainWindow(QMainWindow):
                 QStandardItem(str(classification['area_num'])),
                 QStandardItem(classification['parameter']),
                 QStandardItem(classification['section']),
-                QStandardItem(classification['node']),
+                QStandardItem(str(classification['node'])),
                 QStandardItem(str(classification['sub_key']))
             ]
             model.appendRow(row)

@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QRadioButton, QButtonGroup
-from ui_typeselectionpic import Ui_MainWindow
+from ui_typeselectionpic import Ui_typeselectorpic
 import helper
 import folderselection
 import sys
@@ -8,7 +8,7 @@ import json
 class TypeSelectorPicWindow(QMainWindow):
     def __init__(self, filepath, logged_user):
         super().__init__()
-        self.ui = Ui_MainWindow()
+        self.ui = Ui_typeselectorpic()
         self.ui.setupUi(self)
 
         self.filepath = filepath

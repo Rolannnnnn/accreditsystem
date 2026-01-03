@@ -243,7 +243,6 @@ class FolderSelectorWindow(QMainWindow):
         os.makedirs(documents_dir, exist_ok=True)
 
         copied_count = 0
-        debug_logs = []
 
         for cb, constraints in self.checkboxes:
             if cb.isChecked():
@@ -265,7 +264,6 @@ class FolderSelectorWindow(QMainWindow):
                             count += 1
 
                     shutil.copy(filepath, dest_path)
-                    copied_count += 1
                     
                     # Extract classification info from path
                     # Path format: "Area X > Parameter > Section > Node [> SubKey]"
@@ -273,7 +271,7 @@ class FolderSelectorWindow(QMainWindow):
                     parameter = ""
                     section = ""
                     node = 0
-                    sub_key = 0.0
+                    sub_key = 0.0  # Default for when sub_key is "0" (not in path)
                     
                     if len(parts) >= 1:
                         # Extract area number from "Area X" or just use the area name
@@ -297,6 +295,7 @@ class FolderSelectorWindow(QMainWindow):
                         except ValueError:
                             node = 0
                     
+                    # Only if there's a 5th part, parse sub_key (otherwise it stays 0.0)
                     if len(parts) >= 5:
                         # Extract sub_key
                         try:
@@ -319,15 +318,10 @@ class FolderSelectorWindow(QMainWindow):
                     
                     # Add log entry
                     self.db.add_log(classification_id, self.logged_user)
-                    
-                    debug_logs.append(f"✔ Copied to: {dest_path}")
-                    debug_logs.append(f"  DB: doc_id={doc_id}, classification_id={classification_id}")
+                    copied_count += 1
 
                 except Exception as e:
-                    debug_logs.append(f"❌ Failed to copy to {dest_dir}: {e}")
-
-        # Print all debug logs to console
-        print("\n".join(debug_logs) or "⚠ No folders were selected or copied.")
+                    print(f"Error copying to {dest_dir}: {e}")
 
         # Final popup message
         helper.show_info_dialog(

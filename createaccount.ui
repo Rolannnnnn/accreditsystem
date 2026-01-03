@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>446</width>
-    <height>531</height>
+    <width>473</width>
+    <height>445</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Type Selection</string>
+   <string>Create Account</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
@@ -73,10 +73,32 @@ QRadioButton::indicator:unchecked {
 QRadioButton::indicator:checked {
     background-color: #0078d4;
 }
+
+QComboBox {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView::indicator {
+	border-radius: 5px;
+}
+
+QComboBox QAbstractItemView::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+QComboBox QAbstractItemView::indicator:checked {
+    background-color: #000000;
+    border: 2px solid #000000;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -84,74 +106,102 @@ QRadioButton::indicator:checked {
         <property name="font">
          <font>
           <family>Quicksand</family>
-          <pointsize>12</pointsize>
           <bold>true</bold>
          </font>
         </property>
         <property name="text">
-         <string>BEST MATCHES</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Personal Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="vlayoutbest" native="true">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>100</height>
-         </size>
+       <widget class="QLineEdit" name="nameLine">
+        <property name="placeholderText">
+         <string>Full Name</string>
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QLineEdit" name="positionLine">
+        <property name="placeholderText">
+         <string>Position</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Policy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>25</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QLabel" name="label_2">
         <property name="font">
          <font>
           <family>Quicksand</family>
-          <pointsize>12</pointsize>
           <bold>true</bold>
          </font>
         </property>
         <property name="text">
-         <string>KEYWORD MATCHES</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Account Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="vlayoutkeyword" native="true">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>100</height>
-         </size>
+       <widget class="QLineEdit" name="usernameLine">
+        <property name="placeholderText">
+         <string>Username</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <family>Quicksand</family>
-          <pointsize>12</pointsize>
-          <bold>true</bold>
-         </font>
+       <widget class="QLineEdit" name="passwordLine">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
         </property>
-        <property name="text">
-         <string>MODEL MATCHES</string>
+        <property name="placeholderText">
+         <string>Password</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="vlayoutmodel" native="true">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>100</height>
-         </size>
+       <widget class="QLineEdit" name="confirmPassLine">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Confirm Password</string>
         </property>
        </widget>
       </item>
      </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -163,9 +213,9 @@ QRadioButton::indicator:checked {
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="confirmBttn">
+       <widget class="QPushButton" name="createBttn">
         <property name="text">
-         <string>Confirm</string>
+         <string>Create</string>
         </property>
        </widget>
       </item>
@@ -178,7 +228,7 @@ QRadioButton::indicator:checked {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>446</width>
+     <width>473</width>
      <height>33</height>
     </rect>
    </property>

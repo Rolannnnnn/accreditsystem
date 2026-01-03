@@ -22,12 +22,15 @@ class MainWindow(QMainWindow):
         
         result, id = self.db.verify_account(username, password)
 
-        if result:
+        if not username or not password:   
+            helper.show_invalid_file_dialog(self, "Input Error", "Some fields are empty.")
+            return
+        elif not result:
+            helper.show_invalid_file_dialog(self, "Wrong Credentials", "Invalid username or password.")
+        else:
             self.selector_window = SelectionWindow(id)
             self.selector_window.show()
-            self.close()
-        else:
-            print("Login failed")
+            self.close()       
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

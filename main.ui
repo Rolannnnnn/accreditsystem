@@ -6,107 +6,156 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>446</width>
-    <height>241</height>
+    <width>463</width>
+    <height>324</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Main</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #B8E0FF;
+}
+
+QWidget {
+	background-color: #B8E0FF;
+}
+
+QPushButton {
+    border-radius: 0px;
+    border: 2px solid #0078d4;
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 3px 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffffff;
+	color: #0078d4;
+}
+
+QPushButton:pressed {
+    background-color: #ffffff;
+	color: #ffffff;
+}
+
+QLineEdit {
+	border-radius: 10px;
+	padding: 10px 14px;
+	margin: 2px;
+	background-color: #ffffff;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>30</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>25</number>
     </property>
-    <property name="text">
-     <string>Username:</string>
+    <property name="topMargin">
+     <number>25</number>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>60</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
+    <property name="rightMargin">
+     <number>25</number>
     </property>
-    <property name="text">
-     <string>Password:</string>
+    <property name="bottomMargin">
+     <number>25</number>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="userText">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>30</y>
-      <width>261</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="passText">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>60</y>
-      <width>261</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::EchoMode::Password</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="createBttn">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>90</y>
-      <width>101</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <underline>true</underline>
-     </font>
-    </property>
-    <property name="text">
-     <string>Create an Account</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="loginBttn">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>150</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Login</string>
-    </property>
-   </widget>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Quicksand</family>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	margin-bottom: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;AutoAccred: Automatic Classification and File Management for School Accreditation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="passText">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="userText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="placeholderText">
+         <string>Username</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="loginBttn">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>LOGIN</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>446</width>
+     <width>463</width>
      <height>33</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>passText</tabstop>
+  <tabstop>loginBttn</tabstop>
+  <tabstop>userText</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -2,6 +2,7 @@ import sys
 import modelengine, keywordengine, helper
 from typeselector import TypeSelectorWindow
 from typeselectorpic import TypeSelectorPicWindow
+from createaccount import CreateAccountWindow
 import numpy as np
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QProgressDialog
 from PySide6.QtCore import Qt
@@ -27,6 +28,7 @@ class SelectionWindow(QMainWindow):
         self.ui.processBttn.clicked.connect(self.process_file)
         self.ui.logsBttn.clicked.connect(self.show_view_window)
         self.ui.backBttn.clicked.connect(self.back)
+        self.ui.createBttn.clicked.connect(self.show_create_account_window)
 
     def back(self):
         import main
@@ -37,6 +39,10 @@ class SelectionWindow(QMainWindow):
     def show_view_window(self):
         self.view_window = view.MainWindow()
         self.view_window.show()
+    
+    def show_create_account_window(self):
+        self.create_account_window = CreateAccountWindow()
+        self.create_account_window.show()
 
     def select_file(self):
         file_path, _ = QFileDialog.getOpenFileName(

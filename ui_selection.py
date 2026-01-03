@@ -15,41 +15,131 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QLabel,
-    QLineEdit, QMainWindow, QMenuBar, QPushButton,
-    QSizePolicy, QStatusBar, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QGridLayout,
+    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
+    QMenuBar, QPushButton, QSizePolicy, QSpacerItem,
+    QStatusBar, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(488, 465)
+        MainWindow.resize(488, 506)
+        MainWindow.setStyleSheet(u"QMainWindow {\n"
+"	background-color: #B8E0FF;\n"
+"}\n"
+"\n"
+"QWidget {\n"
+"	background-color: #B8E0FF;\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    border-radius: 0px;\n"
+"    border: 2px solid #0078d4;\n"
+"    background-color: #0078d4;\n"
+"    color: #ffffff;\n"
+"    padding: 3px 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #ffffff;\n"
+"	color: #0078d4;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #ffffff;\n"
+"	color: #ffffff;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"	border-radius: 10px;\n"
+"	padding: 10px 14px;\n"
+"	margin: 2px;\n"
+"	background-color: #ffffff;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator {\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:unchecked {\n"
+"    background-color: #ffffff;\n"
+"    border: 2px solid #0078d4;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:checked {\n"
+"    background-color: #0078d4;\n"
+"    border: 2px solid #0078d4;\n"
+"}\n"
+"\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.chooseBttn = QPushButton(self.centralwidget)
-        self.chooseBttn.setObjectName(u"chooseBttn")
-        self.chooseBttn.setGeometry(QRect(370, 300, 79, 24))
-        self.backBttn = QPushButton(self.centralwidget)
-        self.backBttn.setObjectName(u"backBttn")
-        self.backBttn.setGeometry(QRect(10, 350, 79, 24))
-        self.backBttn.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
-        self.processBttn = QPushButton(self.centralwidget)
-        self.processBttn.setObjectName(u"processBttn")
-        self.processBttn.setGeometry(QRect(400, 350, 79, 24))
+        self.verticalLayout = QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
         self.pathEdit = QLineEdit(self.centralwidget)
         self.pathEdit.setObjectName(u"pathEdit")
-        self.pathEdit.setGeometry(QRect(50, 300, 301, 21))
+
+        self.gridLayout.addWidget(self.pathEdit, 1, 0, 1, 1)
+
+        self.chooseBttn = QPushButton(self.centralwidget)
+        self.chooseBttn.setObjectName(u"chooseBttn")
+
+        self.gridLayout.addWidget(self.chooseBttn, 1, 1, 1, 1)
+
         self.imageframe = QLabel(self.centralwidget)
         self.imageframe.setObjectName(u"imageframe")
-        self.imageframe.setGeometry(QRect(80, 29, 341, 241))
+        self.imageframe.setMinimumSize(QSize(0, 280))
         self.imageframe.setFrameShadow(QFrame.Shadow.Raised)
         self.imageframe.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout.addWidget(self.imageframe, 0, 0, 1, 2)
+
+
+        self.verticalLayout.addLayout(self.gridLayout)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.backBttn = QPushButton(self.centralwidget)
+        self.backBttn.setObjectName(u"backBttn")
+        self.backBttn.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
+
+        self.horizontalLayout.addWidget(self.backBttn)
+
         self.isImageCB = QCheckBox(self.centralwidget)
         self.isImageCB.setObjectName(u"isImageCB")
-        self.isImageCB.setGeometry(QRect(150, 350, 201, 20))
+
+        self.horizontalLayout.addWidget(self.isImageCB)
+
+        self.processBttn = QPushButton(self.centralwidget)
+        self.processBttn.setObjectName(u"processBttn")
+
+        self.horizontalLayout.addWidget(self.processBttn)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 30, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.logsBttn = QPushButton(self.centralwidget)
         self.logsBttn.setObjectName(u"logsBttn")
-        self.logsBttn.setGeometry(QRect(200, 380, 79, 24))
+
+        self.horizontalLayout_4.addWidget(self.logsBttn)
+
+        self.createBttn = QPushButton(self.centralwidget)
+        self.createBttn.setObjectName(u"createBttn")
+
+        self.horizontalLayout_4.addWidget(self.createBttn)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -58,6 +148,11 @@ class Ui_MainWindow(object):
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        QWidget.setTabOrder(self.pathEdit, self.chooseBttn)
+        QWidget.setTabOrder(self.chooseBttn, self.backBttn)
+        QWidget.setTabOrder(self.backBttn, self.isImageCB)
+        QWidget.setTabOrder(self.isImageCB, self.processBttn)
+        QWidget.setTabOrder(self.processBttn, self.logsBttn)
 
         self.retranslateUi(MainWindow)
 
@@ -66,12 +161,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Selection", None))
-        self.chooseBttn.setText(QCoreApplication.translate("MainWindow", u"Select File", None))
-        self.backBttn.setText(QCoreApplication.translate("MainWindow", u"Back", None))
-        self.processBttn.setText(QCoreApplication.translate("MainWindow", u"Process", None))
         self.pathEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"No File Selected...", None))
+        self.chooseBttn.setText(QCoreApplication.translate("MainWindow", u"Select File", None))
         self.imageframe.setText(QCoreApplication.translate("MainWindow", u"No File Selected", None))
+        self.backBttn.setText(QCoreApplication.translate("MainWindow", u"Back", None))
         self.isImageCB.setText(QCoreApplication.translate("MainWindow", u"This Document is Mostly Imagery", None))
+        self.processBttn.setText(QCoreApplication.translate("MainWindow", u"Process", None))
         self.logsBttn.setText(QCoreApplication.translate("MainWindow", u"View Logs", None))
+        self.createBttn.setText(QCoreApplication.translate("MainWindow", u"Create Account", None))
     # retranslateUi
 

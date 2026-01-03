@@ -7,75 +7,139 @@
     <x>0</x>
     <y>0</y>
     <width>525</width>
-    <height>357</height>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>View Table</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #B8E0FF;
+}
+
+QWidget {
+	background-color: #B8E0FF;
+}
+
+QPushButton {
+    border-radius: 0px;
+    border: 2px solid #0078d4;
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 3px 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffffff;
+	color: #0078d4;
+}
+
+QPushButton:pressed {
+    background-color: #ffffff;
+	color: #ffffff;
+}
+
+QLineEdit {
+	border-radius: 10px;
+	padding: 10px 14px;
+	margin: 2px;
+	background-color: #ffffff;
+}
+
+QTableView {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+QCheckBox::indicator {
+	border-radius: 5px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #0078d4;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0078d4;
+    border: 2px solid #0078d4;
+}
+
+QRadioButton::indicator {
+	border-radius: 8px;
+	border: 2px solid #0078d4;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: #ffffff;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #0078d4;
+}
+
+QComboBox {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView::indicator {
+	border-radius: 5px;
+}
+
+QComboBox QAbstractItemView::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+QComboBox QAbstractItemView::indicator:checked {
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="tableView">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>431</width>
-      <height>201</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="documentBttn">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>250</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Document</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="classificationBttn">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>250</y>
-      <width>91</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Classification</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="logBttn">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>250</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Log</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="accountBttn">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>250</y>
-      <width>79</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Account</string>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="documentBttn">
+        <property name="text">
+         <string>Document</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="classificationBttn">
+        <property name="text">
+         <string>Classification</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="logBttn">
+        <property name="text">
+         <string>Log</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="accountBttn">
+        <property name="text">
+         <string>Account</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
