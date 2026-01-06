@@ -2,5 +2,6 @@ model/model.safetensors filter=lfs diff=lfs merge=lfs -text
 keywordgen/label_keywords.json filter=lfs diff=lfs merge=lfs -text
 *json filter=lfs diff=lfs merge=lfs -text
 /ner_model filter=lfs diff=lfs merge=lfs -text
+/dist filter=lfs diff=lfs merge=lfs -text
 keywords.json filter=lfs diff=lfs merge=lfs -text
 ner_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
