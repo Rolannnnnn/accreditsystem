@@ -1,11 +1,25 @@
 import sqlite3
 import os
+import sys
 from PySide6.QtSql import QSqlDatabase, QSqlQuery
 from datetime import datetime
 import hashlib
 
+def get_base_path():
+    """Get the base path for resources, works for both dev and PyInstaller."""
+    if getattr(sys, 'frozen', False):
+        # When running as an executable, use the directory where the exe is located
+        return os.path.dirname(sys.executable)
+    else:
+        # When running as a script, use the directory where the script is located
+        return os.path.dirname(os.path.abspath(__file__))
+
 class DatabaseManager:
     def __init__(self, db_path="accreditation.db"):
+        # Ensure database is created in the correct location
+        if not os.path.isabs(db_path):
+            base_path = get_base_path()
+            db_path = os.path.join(base_path, db_path)
         self.db_path = db_path
         self.init_database()
     

@@ -4,7 +4,6 @@ import helper
 from db import get_db
 from selection import SelectionWindow
 import sys
-import view
 
 class MainWindow(QMainWindow):
     def __init__(self):

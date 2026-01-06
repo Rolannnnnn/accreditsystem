@@ -9,6 +9,13 @@ import os
 import shutil
 from db import get_db
 
+def get_base_path():
+    """Get the base path for resources, works for both dev and PyInstaller."""
+    if getattr(sys, 'frozen', False):
+        return sys._MEIPASS
+    else:
+        return os.path.dirname(os.path.abspath(__file__))
+
 class FolderSelectorWindow(QMainWindow):
     def __init__(self, type, filepath, jsonpath, logged_user):
         super().__init__()
@@ -36,6 +43,10 @@ class FolderSelectorWindow(QMainWindow):
 
     def load_checklist(self, json_path, selected_type):
         # Load JSON
+        # Handle both absolute paths and relative paths for PyInstaller
+        if not os.path.isabs(json_path):
+            base_path = get_base_path()
+            json_path = os.path.join(base_path, json_path)
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 

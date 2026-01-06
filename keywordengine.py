@@ -1,6 +1,17 @@
 import helper
 import json
+import os
+import sys
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+def get_base_path():
+    """Get the base path for resources, works for both dev and PyInstaller."""
+    if getattr(sys, 'frozen', False):
+        # Running as compiled executable
+        return sys._MEIPASS
+    else:
+        # Running in normal Python environment
+        return os.path.dirname(os.path.abspath(__file__))
 
 def keyword_run(text):
     labels = keyword_score_document(text)
@@ -9,7 +20,9 @@ def keyword_run(text):
 
 def keyword_score_document(text):
     # Load the label keyword JSON
-    with open("keywords.json", "r", encoding="utf-8") as f:
+    base_path = get_base_path()
+    keywords_path = os.path.join(base_path, "keywords.json")
+    with open(keywords_path, "r", encoding="utf-8") as f:
         label_keywords = json.load(f)
 
     # Tokenize using the same n-grams (1-3)

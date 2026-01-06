@@ -4,7 +4,7 @@ from typeselector import TypeSelectorWindow
 from typeselectorpic import TypeSelectorPicWindow
 from createaccount import CreateAccountWindow
 import numpy as np
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QProgressDialog
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QProgressDialog, QMessageBox
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
 from ui_selection import Ui_MainWindow
@@ -119,8 +119,20 @@ class SelectionWindow(QMainWindow):
                 else:
                     keywordresult = keywordengine.keyword_run(text)
                     progress.setValue(75)
-                    modelresult = modelengine.model_run(text)
+                    modelresult, confidences = modelengine.model_run(text)
                     progress.setValue(100)
+                    if "" in modelresult or all(conf < 0.60 for conf in confidences):
+                        msg = QMessageBox(self)
+                        msg.setIcon(QMessageBox.Warning)
+                        msg.setWindowTitle("Invalid")
+                        msg.setText("The model showed that the file is not a valid document. Are you sure you want to proceed?")
+                        msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+                        result = msg.exec()
+                        if result == QMessageBox.No:
+                            return
+                        else:
+                            if "" in modelresult:
+                                modelresult.remove("")
                     self.type_selector_window = TypeSelectorWindow(keywordresult, modelresult, self.ui.pathEdit.text(), self.logged_user)
                     self.type_selector_window.show()
                     self.close()

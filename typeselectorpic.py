@@ -3,7 +3,15 @@ from ui_typeselectionpic import Ui_typeselectorpic
 import helper
 import folderselection
 import sys
+import os
 import json
+
+def get_base_path():
+    """Get the base path for resources, works for both dev and PyInstaller."""
+    if getattr(sys, 'frozen', False):
+        return sys._MEIPASS
+    else:
+        return os.path.dirname(os.path.abspath(__file__))
 
 class TypeSelectorPicWindow(QMainWindow):
     def __init__(self, filepath, logged_user):
@@ -15,7 +23,9 @@ class TypeSelectorPicWindow(QMainWindow):
         self.logged_user = logged_user
 
         input_file = "picfolder.json"
-        with open(input_file, "r", encoding="utf-8") as f:
+        base_path = get_base_path()
+        input_file_path = os.path.join(base_path, input_file)
+        with open(input_file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         types = set()
